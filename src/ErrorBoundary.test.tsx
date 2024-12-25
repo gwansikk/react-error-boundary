@@ -57,7 +57,7 @@ describe("ErrorBoundary", () => {
   });
 
   describe("fallback props", () => {
-    let errorBoundaryRef: RefObject<ErrorBoundary>;
+    let errorBoundaryRef: RefObject<ErrorBoundary | null>;
 
     beforeEach(() => {
       errorBoundaryRef = createRef<ErrorBoundary>();
